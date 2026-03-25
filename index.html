@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ProgramaYa!</title>
+    <title>La Agricola</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <div class="logo">🌱 La Agricola</div>
-        <ul class="nav-links">
-            <li><a href="#">sobre nosotros</a></li>
-            <li><a href="#">Quienes somos </a></li>
-            <li><a href="#"> nuestros Valores</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="hero">
- <h1>La Agricola</h1>
-        <button>¿QUIERES  SABER QUIENES SOMOS?</button>
-</section> 
-
-<section id="¿Quiénes somos? "> 
-<div class="img -container"></div>
-<h2> Quienes somos</h2>
-<p>Nos caracterizamos como un equipo multidisciplinario de trabajo, que unido día a día,
-cooperando y esforzándose en forma disciplinada, produce resultados de alta calidad,
-optimizando costos y tiempo.
-Ana porque aprovechamos eficientemente nuestra más preciada ventaja competitiva:
-Nuestra Gente”</p>
-        </section>
-
-<section id="-Laagricola">
     <div class="container">
-    <h2>Nuestro proyecto</h2>
-    <div class="carta">
-        <h3>Mision</h3>
-        <p>Somos una empresa que se dedica a producir y comercializar caña de azúcar con altos 
-         estándares de calidad, eficiencia y responsabilidad ambiental, utilizando prácticas 
-        agrícolas modernas que maximicen el rendimiento, cuiden la tierra y generen desarrollo 
-        sostenible para nuestros colaboradores y la comunidad. </p>
+        <div class="logo">🌱 La Agricola</div>
+        <nav>
+            <ul class="nav-links">
+                <!-- ✅ Links apuntando a cada sección -->
+                <li><a href="#quienes-somos">Sobre nosotros</a></li>
+                <li><a href="#quienes-somos">Quiénes somos</a></li>
+                <li><a href="#caracteristicas">Nuestros valores</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="carta">
-        <h3>vision</h3>
-        <p>Ser una empresa agrícola líder en la producción de caña de azúcar a nivel regional, 
-          reconocida por su innovación, sostenibilidad y compromiso con la excelencia productiva, 
-         contribuyendo al crecimiento del sector agroindustrial y al bienestar de las futuras 
-         generaciones.</p>
+</header>
+
+<section id="hero">
+    <h1>La Agricola</h1>
+    <button onclick="document.getElementById('quienes-somos').scrollIntoView({behavior:'smooth'})">
+        ¿QUIERES SABER QUIÉNES SOMOS?
+    </button>
+</section>
+
+<section id="quienes-somos">
+    <div class="container">
+        <div class="img-container"></div>
+        <div class="texto">
+            <h2>Quiénes somos</h2>
+            <p>Nos caracterizamos como un equipo multidisciplinario de trabajo, que unido día a día,
+            cooperando y esforzándose en forma disciplinada, produce resultados de alta calidad,
+            optimizando costos y tiempo. Aprovechamos eficientemente nuestra más preciada ventaja
+            competitiva: Nuestra Gente.</p>
+        </div>
     </div>
-    <div class="carta">
-        <h3>objetivo general</h3>
-        <p>Cosechar al menos 500 toneladas de caña de azúcar obtenidas de las 5 hectáreas sembradas 
-        a nivel nacional en los próximos 12 meses. </p>
-    </div>
+</section>
+
+<section id="nuestro-proyecto">
+    <div class="container">
+        <h2>Nuestro proyecto</h2>
+        <div class="proyecto">
+            <div class="carta">
+                <h3>Misión</h3>
+                <p>Somos una empresa que se dedica a producir y comercializar caña de azúcar con altos
+                estándares de calidad, eficiencia y responsabilidad ambiental, utilizando prácticas
+                agrícolas modernas que maximicen el rendimiento, cuiden la tierra y generen desarrollo
+                sostenible para nuestros colaboradores y la comunidad.</p>
+            </div>
+            <div class="carta">
+                <h3>Visión</h3>
+                <p>Ser una empresa agrícola líder en la producción de caña de azúcar a nivel regional,
+                reconocida por su innovación, sostenibilidad y compromiso con la excelencia productiva,
+                contribuyendo al crecimiento del sector agroindustrial y al bienestar de las futuras
+                generaciones.</p>
+            </div>
+            <div class="carta">
+                <h3>Objetivo general</h3>
+                <p>Cosechar al menos 500 toneladas de caña de azúcar obtenidas de las 5 hectáreas sembradas
+                a nivel nacional en los próximos 12 meses.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <section id="caracteristicas">
     <div class="container">
-    <ul>De calidad:</ul>
-    <p> la agrícola se comprometo a trabajar con esmero y dedicación en todo el proceso 
-     de producción, para que el producto comercializado cumpla y supere las expectativas del 
-     mercado actual.  </p>
-    <u>De trabajo</u>
-    <p> cada colaborador contribuye al buen funcionamiento de esta empresa, por lo 
-     que brindarles un clima laboral agradable es prioridad. </p>
-    <u>De ambiente: </u>
-    <p> comprendemos lo importante que es diseñar planes que mermen la 
-     contaminación, es por esa razón que esta empresa busca realizar sus labores dejando menos 
-      huellas de carbono. </p>
+        <strong>De calidad:</strong>
+        <p>La Agricola se compromete a trabajar con esmero y dedicación en todo el proceso
+        de producción, para que el producto comercializado cumpla y supere las expectativas del
+        mercado actual.</p>
 
+        <strong>De trabajo:</strong>
+        <p>Cada colaborador contribuye al buen funcionamiento de esta empresa, por lo
+        que brindarles un clima laboral agradable es prioridad.</p>
+
+        <strong>De ambiente:</strong>
+        <p>Comprendemos lo importante que es diseñar planes que mermen la
+        contaminación, es por esa razón que esta empresa busca realizar sus labores dejando menos
+        huellas de carbono.</p>
     </div>
-  </section>
-  <section id="leer">
-    <h2>RESPONSABILIDAD SOCIAL</h2>
-  <BUtton>leer</BUtton>
-  </section>
+</section>
 
-      <footer>
-        <div class="container">
-            <p>&copy;procesoadmin</p>
-        </div>
-      </footer> 
-  </body>
+<section id="final">
+    <h2>RESPONSABILIDAD SOCIAL</h2>
+    <button onclick="document.getElementById('caracteristicas').scrollIntoView({behavior:'smooth'})">
+        Leer
+    </button>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; La Agricola — procesoadmin</p>
+    </div>
+</footer>
+
+</body>
 </html>

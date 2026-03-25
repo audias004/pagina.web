@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 html {
@@ -34,6 +34,7 @@ button:hover {
     padding: 0 20px;
 }
 .color-acento { color: blueviolet; }
+
 /* ── HEADER ── */
 header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -60,11 +61,12 @@ header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 header a:hover {
     color: blueviolet;
 }
+
 /* ── HERO ── */
 #hero {
     display: flex;
@@ -79,7 +81,7 @@ header a:hover {
         rgba(37, 31, 31, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url("img/logo lagricolasa.png");
+    url("img/logo\ lagricolasa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -87,6 +89,7 @@ header a:hover {
 #hero h1 {
     color: white;
 }
+
 /* ── QUIENES SOMOS ── */
 #quienes-somos .container {
     display: flex;
@@ -106,6 +109,7 @@ header a:hover {
 #quienes-somos .texto {
     text-align: center;
 }
+
 /* ── NUESTRO PROYECTO ── */
 #nuestro-proyecto {
     background-color: rgb(30, 30, 30);
@@ -116,6 +120,7 @@ header a:hover {
 #nuestro-proyecto h2 {
     margin-top: 0;
 }
+
 /* ── CARTAS ── */
 .proyecto {
     display: flex;
@@ -138,26 +143,28 @@ header a:hover {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url("img/logo mision.png");
+    url("img/logo\ mision.jpg");
 }
 .carta:nth-child(2) {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url("img/logo vision.png");
+    url("img/logo\ vision.jpg");
 }
 .carta:nth-child(3) {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url("img/caña.jpg");
+    url("img/cana.jpg");
 }
+
 /* ── CARACTERISTICAS ── */
 #caracteristicas {
     padding: 60px 0;
     background-color: #f5f5f5;
+    scroll-margin-top: 20px;
 }
 #caracteristicas strong {
     font-size: 1.4em;
@@ -165,6 +172,7 @@ header a:hover {
     display: block;
     margin-top: 20px;
 }
+
 /* ── FINAL (RESPONSABILIDAD SOCIAL) ── */
 #final {
     display: flex;
@@ -172,7 +180,14 @@ header a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30, 30, 30);
+    /* ✅ AQUÍ pon el nombre de tu imagen */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("img/tg-ome.jpg");
+    background-size: cover;
+    background-position: center center;
     color: white;
     height: 80vh;
 }
@@ -182,6 +197,7 @@ header a:hover {
 #final button {
     font-size: 5vw;
 }
+
 /* ── FOOTER ── */
 footer {
     background-color: rgb(30, 30, 30);
@@ -189,6 +205,7 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
 /* ── MEDIA QUERY ── */
 @media (min-width: 720px) {
     header .container {
