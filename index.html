@@ -1,102 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>La Agricola</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Agrícola S.A.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">🌱 La Agricola</div>
-        <nav>
-            <ul class="nav-links">
-                <!-- ✅ Links apuntando a cada sección -->
-                <li><a href="#quienes-somos">Sobre nosotros</a></li>
-                <li><a href="#quienes-somos">Quiénes somos</a></li>
-                <li><a href="#caracteristicas">Nuestros valores</a></li>
-            </ul>
-        </nav>
-    </div>
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-icon">🌿</span>
+      <span class="logo-text">La <em>Agrícola</em></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#quienes-somos">Nosotros</a></li>
+        <li><a href="#mision-vision">Misión & Visión</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#estrategias">Estrategias</a></li>
+        <li><a href="#politicas">Políticas</a></li>
+        <li><a href="#reglas">Reglas</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
+<!-- ══════════════ HERO ══════════════ -->
 <section id="hero">
-    <h1>La Agricola</h1>
-    <button onclick="document.getElementById('quienes-somos').scrollIntoView({behavior:'smooth'})">
-        ¿QUIERES SABER QUIÉNES SOMOS?
-    </button>
+  <div class="hero-bg" style="background-image: url('img/logo lagricolasa.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-label">Bienvenidos a</p>
+    <h1>La <em>Agrícola</em></h1>
+    <p class="hero-slogan">Cosechando la dulzura de la vida</p>
+    <a href="#quienes-somos" class="btn-hero">Conoce más ↓</a>
+  </div>
+  <div class="hero-scroll-hint">↓</div>
 </section>
 
+<!-- ══════════════ QUIÉNES SOMOS ══════════════ -->
 <section id="quienes-somos">
-    <div class="container">
-        <div class="img-container"></div>
-        <div class="texto">
-            <h2>Quiénes somos</h2>
-            <p>Nos caracterizamos como un equipo multidisciplinario de trabajo, que unido día a día,
-            cooperando y esforzándose en forma disciplinada, produce resultados de alta calidad,
-            optimizando costos y tiempo. Aprovechamos eficientemente nuestra más preciada ventaja
-            competitiva: Nuestra Gente.</p>
+  <div class="container split">
+    <div class="split-img fade-in">
+      <div class="img-placeholder" style="background-image: url('img/colaboradores.jpg');">
+        <span class="img-hint">📷 Agrega tu imagen aquí</span>
+      </div>
+      <div class="years-badge">48<span>años</span></div>
+    </div>
+    <div class="split-text fade-in">
+      <p class="section-tag">Descripción</p>
+      <h2>Quiénes somos</h2>
+      <p>La Agrícola produce y comercializa <strong>Caña de azúcar</strong>, vendida a los diferentes ingenios del país. Estamos comprometidos con la mejora continua en cada uno de los procesos y consideramos como nuestro más importante recurso a nuestro talento humano.</p>
+      <p>Con <strong>48 años de existencia</strong>, La Agrícola se ha caracterizado como un productor sólido, sobresaliendo en su eficiencia operativa, lo que nos ha posicionado entre los primeros lugares a nivel nacional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MISIÓN & VISIÓN ══════════════ -->
+<section id="mision-vision">
+  <div class="container">
+    <p class="section-tag center">Planeación estratégica</p>
+    <h2 class="center">Misión &amp; Visión</h2>
+    <div class="mv-grid">
+
+      <div class="mv-card fade-in">
+        <div class="mv-img" style="background-image: url('img/logo mision.jpg');">
+          <span class="img-hint">📷 Imagen Misión</span>
         </div>
-    </div>
-</section>
-
-<section id="nuestro-proyecto">
-    <div class="container">
-        <h2>Nuestro proyecto</h2>
-        <div class="proyecto">
-            <div class="carta">
-                <h3>Misión</h3>
-                <p>Somos una empresa que se dedica a producir y comercializar caña de azúcar con altos
-                estándares de calidad, eficiencia y responsabilidad ambiental, utilizando prácticas
-                agrícolas modernas que maximicen el rendimiento, cuiden la tierra y generen desarrollo
-                sostenible para nuestros colaboradores y la comunidad.</p>
-            </div>
-            <div class="carta">
-                <h3>Visión</h3>
-                <p>Ser una empresa agrícola líder en la producción de caña de azúcar a nivel regional,
-                reconocida por su innovación, sostenibilidad y compromiso con la excelencia productiva,
-                contribuyendo al crecimiento del sector agroindustrial y al bienestar de las futuras
-                generaciones.</p>
-            </div>
-            <div class="carta">
-                <h3>Objetivo general</h3>
-                <p>Cosechar al menos 500 toneladas de caña de azúcar obtenidas de las 5 hectáreas sembradas
-                a nivel nacional en los próximos 12 meses.</p>
-            </div>
+        <div class="mv-body">
+          <div class="mv-icon">🎯</div>
+          <h3>Misión</h3>
+          <p>Somos una empresa que se dedica a producir y comercializar caña de azúcar con altos estándares de calidad, eficiencia y responsabilidad ambiental, utilizando prácticas agrícolas modernas que maximicen el rendimiento, cuiden la tierra y generen desarrollo sostenible para nuestros colaboradores y la comunidad.</p>
         </div>
+      </div>
+
+      <div class="mv-card fade-in">
+        <div class="mv-img" style="background-image: url('img/logo vision.jpg');">
+          <span class="img-hint">📷 Imagen Visión</span>
+        </div>
+        <div class="mv-body">
+          <div class="mv-icon">🔭</div>
+          <h3>Visión</h3>
+          <p>Ser una empresa agrícola líder en la producción de caña de azúcar a nivel regional, reconocida por su innovación, sostenibilidad y compromiso con la excelencia productiva, contribuyendo al crecimiento del sector agroindustrial y al bienestar de las futuras generaciones.</p>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<section id="caracteristicas">
-    <div class="container">
-        <strong>De calidad:</strong>
-        <p>La Agricola se compromete a trabajar con esmero y dedicación en todo el proceso
-        de producción, para que el producto comercializado cumpla y supere las expectativas del
-        mercado actual.</p>
+<!-- ══════════════ VALORES ══════════════ -->
+<section id="valores">
+  <div class="container">
+    <p class="section-tag center">Lo que nos define</p>
+    <h2 class="center">Valores institucionales</h2>
+    <div class="valores-grid">
 
-        <strong>De trabajo:</strong>
-        <p>Cada colaborador contribuye al buen funcionamiento de esta empresa, por lo
-        que brindarles un clima laboral agradable es prioridad.</p>
+      <div class="valor-card fade-in">
+        <div class="valor-num">01</div>
+        <div class="valor-icon">🤝</div>
+        <h4>Responsabilidad</h4>
+        <p>Cumplimos nuestros compromisos con clientes, colaboradores y el medio ambiente, trabajando con disciplina y respeto por la tierra.</p>
+      </div>
 
-        <strong>De ambiente:</strong>
-        <p>Comprendemos lo importante que es diseñar planes que mermen la
-        contaminación, es por esa razón que esta empresa busca realizar sus labores dejando menos
-        huellas de carbono.</p>
+      <div class="valor-card fade-in">
+        <div class="valor-num">02</div>
+        <div class="valor-icon">⭐</div>
+        <h4>Excelencia</h4>
+        <p>Buscamos excelencia en cada etapa del proceso productivo, garantizando productos agrícolas confiables y de alto rendimiento.</p>
+      </div>
+
+      <div class="valor-card fade-in">
+        <div class="valor-num">03</div>
+        <div class="valor-icon">🔑</div>
+        <h4>Integridad</h4>
+        <p>Actuamos con honestidad, cuidando de las personas y garantizando transparencia en cada decisión y proceso.</p>
+      </div>
+
+      <div class="valor-card fade-in">
+        <div class="valor-num">04</div>
+        <div class="valor-icon">🌍</div>
+        <h4>Respeto</h4>
+        <p>Creemos que el esfuerzo conjunto y la colaboración son la base para alcanzar mejores resultados, valorando las diferencias de nuestros colaboradores.</p>
+      </div>
+
+      <div class="valor-card fade-in">
+        <div class="valor-num">05</div>
+        <div class="valor-icon">💚</div>
+        <h4>Empatía</h4>
+        <p>Conocemos las necesidades de nuestra sociedad, promoviendo un ambiente de comprensión y apoyo para los sectores más vulnerables.</p>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<section id="final">
-    <h2>RESPONSABILIDAD SOCIAL</h2>
-    <button onclick="document.getElementById('caracteristicas').scrollIntoView({behavior:'smooth'})">
-        Leer
-    </button>
+<!-- ══════════════ OBJETIVOS ══════════════ -->
+<section id="objetivos">
+  <div class="container">
+    <p class="section-tag center">A dónde vamos</p>
+    <h2 class="center">Objetivos</h2>
+
+    <div class="obj-general fade-in">
+      <div class="obj-general-inner">
+        <div class="obj-img" style="background-image: url('img/cana.jpg');">
+          <span class="img-hint">📷 Imagen caña</span>
+        </div>
+        <div class="obj-general-text">
+          <span class="obj-badge">Objetivo General</span>
+          <p>Cosechar al menos <strong>500 toneladas</strong> de caña de azúcar obtenidas de las <strong>5 hectáreas</strong> sembradas a nivel nacional en los próximos 12 meses.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">Objetivos Específicos</h3>
+    <div class="obj-list">
+
+      <div class="obj-item fade-in">
+        <span class="obj-num">02</span>
+        <p>Lograr una producción trimestral de al menos <strong>125 toneladas</strong> de las cinco hectáreas plantadas.</p>
+      </div>
+
+      <div class="obj-item fade-in">
+        <span class="obj-num">03</span>
+        <p>Organizar las actividades necesarias de cada una de las áreas funcionales para la producción de caña de azúcar durante el año 2026.</p>
+      </div>
+
+      <div class="obj-item fade-in">
+        <span class="obj-num">04</span>
+        <p>Reducir la merma neta trimestral al menor <strong>5%</strong> en las cinco hectáreas plantadas de caña de azúcar.</p>
+      </div>
+
+      <div class="obj-item fade-in">
+        <span class="obj-num">05</span>
+        <p>Realizar la entrega de caña de azúcar aplicando técnicas de control preventivo, concurrente y posterior en cada etapa desde el corte hasta el despacho.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
+<!-- ══════════════ ESTRATEGIAS ══════════════ -->
+<section id="estrategias">
+  <div class="container">
+    <p class="section-tag center">Cómo lo lograremos</p>
+    <h2 class="center">Estrategias</h2>
+    <div class="estrategias-grid">
+
+      <div class="estrategia-card fade-in">
+        <div class="estr-icon">📅</div>
+        <h4>Cronograma</h4>
+        <p>Elaborar un cronograma de actividades como riego, fertilización y manejo de plagas.</p>
+      </div>
+
+      <div class="estrategia-card fade-in">
+        <div class="estr-icon">📊</div>
+        <h4>Sondeo mensual</h4>
+        <p>Hacer un sondeo de la producción mensual para detectar variaciones a tiempo.</p>
+      </div>
+
+      <div class="estrategia-card fade-in">
+        <div class="estr-icon">🔍</div>
+        <h4>Control semanal</h4>
+        <p>Revisar cada semana la cosecha de caña para verificar los atributos del producto.</p>
+      </div>
+
+      <div class="estrategia-card fade-in">
+        <div class="estr-icon">🎓</div>
+        <h4>Capacitación</h4>
+        <p>Capacitar al personal de las áreas funcionales de manera periódica.</p>
+      </div>
+
+      <div class="estrategia-card fade-in">
+        <div class="estr-icon">📈</div>
+        <h4>Indicadores</h4>
+        <p>Establecer un sistema de seguimiento semanal de indicadores como merma, cosecha y calidad.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROCEDIMIENTOS ══════════════ -->
+<section id="procedimientos">
+  <div class="container">
+    <p class="section-tag center">Pasos clave</p>
+    <h2 class="center">Procedimientos</h2>
+    <div class="proc-grid">
+
+      <div class="proc-card fade-in">
+        <div class="proc-img" style="background-image: url('img/colaboradores.jpg');">
+          <span class="img-hint">📷 Imagen terreno</span>
+        </div>
+        <div class="proc-body">
+          <span class="proc-num">01</span>
+          <h4>Preparación del terreno</h4>
+          <p>Preparar el terreno y verificar las condiciones adecuadas de suelo y clima para la siembra.</p>
+        </div>
+      </div>
+
+      <div class="proc-card fade-in">
+        <div class="proc-img" style="background-image: url('img/cana.jpg');">
+          <span class="img-hint">📷 Imagen cosecha</span>
+        </div>
+        <div class="proc-body">
+          <span class="proc-num">02</span>
+          <h4>Recolección y control</h4>
+          <p>Coordinar la recolección de la caña inmediatamente después del corte, verificando el estado del producto antes, durante y después para evitar merma.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ POLÍTICAS ══════════════ -->
+<section id="politicas">
+  <div class="container">
+    <p class="section-tag center">Nuestros compromisos</p>
+    <h2 class="center">Políticas</h2>
+    <div class="politicas-list">
+
+      <div class="politica-item fade-in">
+        <div class="politica-icon">🏆</div>
+        <div>
+          <h4>De calidad</h4>
+          <p>La Agrícola se compromete a trabajar con esmero y dedicación en todo el proceso de producción, para que el producto comercializado cumpla y supere las expectativas del mercado actual.</p>
+        </div>
+      </div>
+
+      <div class="politica-item fade-in">
+        <div class="politica-icon">👷</div>
+        <div>
+          <h4>De trabajo</h4>
+          <p>Cada colaborador contribuye al buen funcionamiento de esta empresa, por lo que brindarles un clima laboral agradable es prioridad.</p>
+        </div>
+      </div>
+
+      <div class="politica-item fade-in">
+        <div class="politica-icon">🌿</div>
+        <div>
+          <h4>De ambiente</h4>
+          <p>Comprendemos lo importante que es diseñar planes que mermen la contaminación, realizando nuestras labores dejando menos huellas de carbono.</p>
+        </div>
+      </div>
+
+      <div class="politica-item fade-in">
+        <div class="politica-icon">🎛️</div>
+        <div>
+          <h4>De control</h4>
+          <p>El enfoque está en detectar desviaciones a través del establecimiento de estándares de cumplimiento para que la calidad del producto supere expectativas.</p>
+        </div>
+      </div>
+
+      <div class="politica-item fade-in">
+        <div class="politica-icon">😊</div>
+        <div>
+          <h4>De clima laboral</h4>
+          <p>Comprendemos lo importante que es para el colaborador su entorno, por lo que proporcionarle un entorno sano y libre de conflictos es nuestra prioridad.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REGLAS ══════════════ -->
+<section id="reglas">
+  <div class="reglas-bg" style="background-image: url('img/tg-ome.jpg');"></div>
+  <div class="reglas-overlay"></div>
+  <div class="container reglas-inner">
+    <p class="section-tag center light">Nuestro código</p>
+    <h2 class="center light">Reglas</h2>
+    <div class="reglas-grid">
+      <div class="regla-item fade-in"><span>🌾</span><p>Cuidar el cultivo en todas las etapas.</p></div>
+      <div class="regla-item fade-in"><span>⏰</span><p>Cumplir con los horarios de trabajo.</p></div>
+      <div class="regla-item fade-in"><span>🦺</span><p>Usar el equipo indicado de protección.</p></div>
+      <div class="regla-item fade-in"><span>🤝</span><p>Respetar a los demás colaboradores.</p></div>
+      <div class="regla-item fade-in"><span>🔧</span><p>Cuidar de las herramientas de trabajo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
 <footer>
-    <div class="container">
-        <p>&copy; La Agricola — procesoadmin</p>
-    </div>
+  <div class="container footer-inner">
+    <div class="footer-logo">🌿 La <em>Agrícola</em></div>
+    <p class="footer-slogan">Cosechando la dulzura de la vida</p>
+    <p class="footer-copy">&copy; 2026 La Agrícola S.A. — Proceso Administrativo · Universidad Mariano Gálvez de Guatemala</p>
+  </div>
 </footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+  nav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      hamburger.classList.remove('active');
+    });
+  });
+
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.15 });
+  fadeEls.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
